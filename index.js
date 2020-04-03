@@ -5,7 +5,7 @@ const path = require('path')
 let data = {}
 
 try {
-    const file = path.join(__dirname, './../config.yml')
+    const file = path.join(__dirname, './../../config.yml')
     const raw = fs.readFileSync(file)
     data = yaml.safeLoad(raw)
 } catch (err) {
